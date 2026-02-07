@@ -1,0 +1,48 @@
+/* ===========================
+   FOOTER.CSS — FOOTER SECTION
+   =========================== */
+
+/* FOOTER LAYOUT */
+footer {
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* FOOTER TEXT */
+footer p {
+    color: #bdbdbd;
+}
+
+/* BACK TO TOP BUTTON */
+footer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--hover-color);
+    color: var(--text-color);
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+footer a i {
+    font-size: 1rem;
+    color: var(--second-bg-color);
+}
+
+/* ===========================
+   RESPONSIVE BEHAVIOUR
+   =========================== */
+
+@media (max-width: 991px) {
+    footer {
+        padding: 15px 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    footer p {
+        font-size: .6rem;
+    }
+}

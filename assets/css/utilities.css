@@ -1,0 +1,28 @@
+/* ===========================
+   UTILITIES.CSS — HELPERS
+   =========================== */
+
+/* SCROLL ANIMATION HELPERS */
+.scroll-scale {
+    opacity: 0;
+    transform: scale(.9);
+    transition: 2s;
+}
+
+.scroll-bottom {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
+.scroll-top {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+/* WHEN ELEMENTS BECOME VISIBLE */
+.show-items {
+    opacity: 1;
+    transform: none;
+}

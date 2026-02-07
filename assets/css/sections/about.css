@@ -1,0 +1,123 @@
+/* ===========================
+   ABOUT.CSS — ABOUT SECTION
+   =========================== */
+
+/* ABOUT SECTION LAYOUT */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+/* ABOUT IMAGE WRAPPER */
+.about .img-about {
+    text-align: center;
+    position: relative;
+}
+
+.about .img-about img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* FLOATING MORPHING BLOBS */
+.info-about1,
+.info-about2,
+.info-about3 {
+    background: var(--bg-color);
+    font-size: .5rem;
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: var(--neon-box-shadow);
+    border: 1px solid var(--hover-color);
+    outline: 2px solid var(--bg-color);
+    z-index: 100;
+    animation: morph 6s linear infinite;
+}
+
+/* BLOB POSITIONS */
+.info-about1 {
+    top: 200px;
+    left: 55px;
+}
+
+.info-about2 {
+    top: 120px;
+    right: 15px;
+}
+
+.info-about3 {
+    bottom: 80px;
+    left: 280px;
+}
+
+/* ABOUT TEXT */
+.about-content span {
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-content h2 {
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.about-content h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.about-content p {
+    color: #fdfdfd;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+/* HIGHLIGHTED NUMBERS INSIDE BLOBS */
+.img-about span {
+    color: var(--hover-color);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* ===========================
+   RESPONSIVE BEHAVIOUR
+   =========================== */
+
+@media (max-width: 768px) {
+
+    /* STACK CONTENT */
+    .about {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+
+    /* SMALLER IMAGE */
+    .img-about img {
+        width: 300px;
+    }
+
+    /* HIDE FLOATING BLOBS ON SMALL SCREENS */
+    .info-about1,
+    .info-about2,
+    .info-about3 {
+        display: none;
+    }
+
+    .img-about p {
+        font-size: 1rem;
+    }
+}

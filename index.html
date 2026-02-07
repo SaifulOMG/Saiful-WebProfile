@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Saiful Alam Portfolio</title>
+
+    <!-- CSS ORDER -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link rel="stylesheet" href="assets/css/sections/header.css">
+    <link rel="stylesheet" href="assets/css/sections/home.css">
+    <link rel="stylesheet" href="assets/css/sections/about.css">
+    <link rel="stylesheet" href="assets/css/sections/services.css">
+    <link rel="stylesheet" href="assets/css/sections/skills.css">
+    <link rel="stylesheet" href="assets/css/sections/portfolio.css">
+    <link rel="stylesheet" href="assets/css/sections/contact.css">
+    <link rel="stylesheet" href="assets/css/sections/footer.css">
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
-    <!-- header site ------------------------------------------------------------------->
-     <header>
+    <!-- HEADER -->
+    <header>
         <div class="logo"><span>S</span>aiful.</div>
         <ul class="navlist">
             <li><a href="#home" style="--i:1;">Home</a></li>
             <li><a href="#about" style="--i:2;">About</a></li>
-            <li><a href="#experience" style="--i:3;">Experience</a></li>
+            <li><a href="#services" style="--i:3;">Experience</a></li>
             <li><a href="#skills" style="--i:4;">Skills</a></li>
             <li><a href="#portfolio" style="--i:5;">Projects</a></li>
             <li><a href="#contact" style="--i:6;">Contact</a></li>
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
-     </header>
+    </header>
 
-     <!-- home section ---------------------------------------------------------------->
-      <section id="home" class="home">
+    <!-- HOME -->
+
+    <section id="home" class="home">
         <div class="home-content scroll-scale">
             <h1>Hi! I'm Saiful Alam</h1>
             <div class="change-text">
@@ -31,8 +49,8 @@
                 <h3>
                     <span class="word">iOS&nbsp;Engineer</span>
                     <!-- <span class="word">Angular&nbsp;Developer</span>
-                    <span class="word">.NET&nbsp;Developer</span> -->
-                    <!-- <span class="word">UX/UI&nbsp;Developer</span>
+                    <span class="word">.NET&nbsp;Developer</span>
+                    <span class="word">UX/UI&nbsp;Developer</span>
                     <span class="word">Graphic&nbsp;Designer</span> -->
                 </h3>
             </div>
@@ -66,7 +84,7 @@
 
         <div class="home-image scroll-scale">
             <div class="img-box">
-                <img src="Img/about-me-emptyPic.png" alt="">
+                <img src="assets/img/about-me-emptyPic.png" alt="">
             </div>
 
             <div class="liquid-shape">
@@ -128,13 +146,13 @@
             </div>
         </div>
 
-      </section>
+    </section>
 
-      <!-- about section ---------------------------------------------------------------->
+    <!-- ABOUT -->
 
-      <section id="about" class="about">
+    <section id="about" class="about">
         <div class="img-about scroll-scale">
-            <img src="Img/about-me-emptyPic.png" alt="">
+            <img src="assets/img/about-me-emptyPic.png" alt="">
             <div class="info-about1">
                 <span>6+</span>
                 <p>Years of Experience</p>
@@ -160,57 +178,72 @@
             </div>
         </div>
 
-      </section>
+    </section>
 
-      <!-- services section ---------------------------------------------------------------->
+    <!-- SERVICES / EXPERIENCE -->
 
-      <section id="experience" class="services">
+    <section id="services" class="services">
 
         <div class="main-text scroll-scale">
             <span>what can I do and my experience</span>
             <h2>Experience and Publications</h2>
         </div>
 
-        <div class="section-services scroll-bottom">
-            <div class="service-box">
-                <i class="bx bxs-layer service-icon"></i>
-                <h3>AI/ML Integration</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolar explicabo ducimus architecto soluta aliquid doloreque mollitia.
-                </p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+        <div class="timeline">
+        <div class="outer scroll-scale">
+            <div class="card">
+            <div class="experience">
+                <div class="timeline-heading">
+                    <h3>Briteyellow</h3>
+                    <p>2020 - 2024</p>
                 </div>
+                <p class="experience-role">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
-
-            <div class="service-box">
-                <i class="bx bx-code-alt service-icon"></i>
-                <h3>AR Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolar explicabo ducimus architecto soluta aliquid doloreque mollitia.
-                </p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
-                </div>
             </div>
-
-            <div class="service-box">
-                <i class="bx bx-desktop service-icon"></i>
-                <h3>Testing & Architecture</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolar explicabo ducimus architecto soluta aliquid doloreque mollitia.
-                </p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+            <div class="card">
+            <div class="experience">
+                <div class="timeline-heading">
+                    <h3>Briteyellow</h3>
+                    <p>2020 - 2024</p>
                 </div>
+                <p class="experience-role">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            </div>
+            <div class="card">
+            <div class="experience">
+                <div class="timeline-heading">
+                    <h3>Briteyellow</h3>
+                    <p>2020 - 2024</p>
+                </div>
+                <p class="experience-role">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            </div>
+            <div class="card">
+            <div class="experience">
+                <div class="timeline-heading">
+                    <h3>Briteyellow</h3>
+                    <p>2020 - 2024</p>
+                </div>
+                <p class="experience-role">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            </div>
+            <div class="card">
+            <div class="experience">
+                <div class="timeline-heading">
+                    <h3>Briteyellow</h3>
+                    <p>2020 - 2024</p>
+                </div>
+                <p class="experience-role">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
             </div>
         </div>
+        </div>
 
-      </section>
-      
-      <!-- skill section ---------------------------------------------------------------->
+    </section>
 
-      <section id="skills" class="skills">
+    <!-- SKILLS -->
+
+    <section id="skills" class="skills">
 
         <div class="main-text scroll-scale">
             <span>technical and professional</span>
@@ -330,11 +363,11 @@
             </div>
         </div>
 
-      </section>
+    </section>
 
-      <!-- portfolio section ---------------------------------------------------------------->
+    <!-- PORTFOLIO -->
 
-      <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="main-text scroll-scale">
             <span>What I will I do for you</span>
             <h2>Latest Project</h2>
@@ -351,7 +384,7 @@
             <div class="portfolio-gallery scroll-bottom">
                 <div class="port-box mix product">
                     <div class="port-image">
-                        <img src="Img/1.jpg" alt="">
+                        <img src="assets/img/1.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic Design</h3>
@@ -364,7 +397,7 @@
 
                 <div class="port-box mix product">
                     <div class="port-image">
-                        <img src="Img/2.jpg" alt="">
+                        <img src="assets/img/2.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic Design</h3>
@@ -377,7 +410,7 @@
 
                 <div class="port-box mix inter">
                     <div class="port-image">
-                        <img src="Img/3.jpg" alt="">
+                        <img src="assets/img/3.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic Design</h3>
@@ -390,7 +423,7 @@
 
                 <div class="port-box mix inter">
                     <div class="port-image">
-                        <img src="Img/4.jpg" alt="">
+                        <img src="assets/img/4.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic Design</h3>
@@ -403,7 +436,7 @@
 
                 <div class="port-box mix inter">
                     <div class="port-image">
-                        <img src="Img/5.jpg" alt="">
+                        <img src="assets/img/5.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic Design</h3>
@@ -416,7 +449,7 @@
 
                 <div class="port-box mix web">
                     <div class="port-image">
-                        <img src="Img/6.jpg" alt="">
+                        <img src="assets/img/6.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic Design</h3>
@@ -429,11 +462,11 @@
             </div>
         </div>
 
-      </section>
-    
-      <!-- Contact section ---------------------------------------------------------------->
-     
-      <section id="contact" class="contact">
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
         <div class="main-text scroll-scale">
             <span>ask me a question</span>
             <h2>Contact Me</h2>
@@ -449,15 +482,23 @@
                 <button type="submit" class="btn">Send Message</button>
             </div>
         </form>
-      </section>
+    </section>
 
-      <!-- Footer section ----------------------------------------------------------------->
-     
-      <footer>
+    <!-- FOOTER -->
+      
+    <footer>
         <p class="scroll-scale">Copyright &copy; 2025 Saiful Alam. All rights reserved.</p>
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </footer>
-    <script src="JS/mixitup.min.js"></script>
-    <script src="JS/script.js"></script>
+    </footer>
+
+    <script src="assets/vendor/mixitup.min.js"></script>
+    <script src="assets/js/textAnimation.js"></script>
+    <script src="assets/js/circleSkills.js"></script>
+    <script src="assets/js/portfolioFilter.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/scrollAnimations.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
 </body>
 </html>

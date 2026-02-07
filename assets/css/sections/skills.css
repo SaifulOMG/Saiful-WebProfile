@@ -1,0 +1,164 @@
+/* ===========================
+   SKILLS.CSS — SKILLS SECTION
+   =========================== */
+
+/* SECTION BACKGROUND */
+.skills {
+    background: var(--second-bg-color);
+}
+
+/* GRID LAYOUT */
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+/* SECTION TITLE */
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+/* ===========================
+   LEFT SIDE — SKILL BARS
+   =========================== */
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* BASE BAR FILL */
+.skill-bar .bar span {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+/* INDIVIDUAL SKILL WIDTHS + ANIMATIONS */
+.skill-bar .bar .swift {
+    width: 85%;
+    animation: swift 2s;
+}
+
+.skill-bar .bar .swiftUI {
+    width: 90%;
+    animation: swiftUI 2.5s;
+}
+
+.skill-bar .bar .coreML {
+    width: 80%;
+    animation: coreML 3s;
+}
+
+.skill-bar .bar .aRKit {
+    width: 62%;
+    animation: aRKit 3.5s;
+}
+
+.skill-bar .bar .socket-communication {
+    width: 55%;
+    animation: socket-communication 4s;
+}
+
+.skill-bar .bar .combine {
+    width: 85%;
+    animation: combine 4.5s;
+}
+
+.skill-bar .bar .mapkit {
+    width: 75%;
+    animation: mapkit 5s;
+}
+
+/* ===========================
+   RIGHT SIDE — PROFESSIONAL SKILLS
+   =========================== */
+
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+
+.box .text {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.box .text big {
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small {
+    display: block;
+    font-weight: 600;
+}
+
+/* CIRCLE CONTAINER */
+.circle {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CIRCLE POINTS */
+.circle .points {
+    width: 2px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+/* GLOW WHEN MARKED */
+.points.marked {
+    animation: glow 0.4s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
+/* ===========================
+   RESPONSIVE BEHAVIOUR
+   =========================== */
+
+@media (max-width: 768px) {
+    .skill-main {
+        grid-template-columns: 1fr;
+    }
+}

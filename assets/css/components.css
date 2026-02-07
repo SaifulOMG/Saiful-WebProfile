@@ -1,0 +1,160 @@
+/* ===========================
+   COMPONENTS.CSS — UI ELEMENTS
+   =========================== */
+
+/* BUTTON (PRIMARY) */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid var(--hover-color);
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    z-index: 1;
+    box-shadow: var(--neon-box-shadow);
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+    color: var(--hover-color);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .4s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+/* SECONDARY BUTTON */
+.btn:nth-child(2) {
+    background: var(--bg-color);
+    color: var(--hover-color);
+}
+
+.btn:nth-child(2)::before {
+    background: var(--hover-color);
+}
+
+.btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn:nth-child(2):hover::before {
+    background: var(--hover-color);
+}
+
+/* BUTTON BOX (CONTAINER) */
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 45px;
+}
+
+/* INFO BOX (EMAIL + CONTACT) */
+.info-box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 1rem 0 2rem;
+}
+
+.info-box h5 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.info-box span {
+    font-size: .9rem;
+    color: #bdbdbd;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    border-radius: 5px;
+    transition: .6s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem #12f7ff;
+    z-index: 1;
+}
+
+.social-icons a i {
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: var(--bg-color);
+}
+
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--hover-color);
+    transition: .6s;
+    z-index: -1;
+}
+
+.social-icons a:hover::before {
+    width: 100%;
+}
+
+.main-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--hover-color);
+}
+
+.main-text h2 {
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.main-text span {
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

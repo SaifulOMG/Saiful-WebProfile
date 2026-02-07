@@ -1,0 +1,29 @@
+/* ===========================
+   LAYOUT.CSS — GLOBAL LAYOUT
+   =========================== */
+
+/* GLOBAL SECTION SPACING */
+section {
+    padding: 100px 10%;
+}
+
+/* RESPONSIVE SECTION SPACING */
+@media (max-width: 991px) {
+    section {
+        padding: 50px 5%;
+    }
+}
+
+/* GLOBAL IMAGE BOX ALIGNMENT */
+.img-box {
+    text-align: center;
+}
+
+/* GLOBAL FLEX / GRID HELPERS (if needed later)
+   — currently none required, keeping file clean */
+/* GENERIC CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,166 @@
+/* ===========================
+   SERVICES.CSS — EXPERIENCE TIMELINE
+   =========================== */
+
+/* SECTION WRAPPER */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ===========================
+   TIMELINE CARD CONTAINER
+   =========================== */
+
+.card {
+    position: relative;
+    max-width: 800px;
+}
+
+/* ORIGINAL OFFSET PADDING */
+.card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+}
+
+.card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+}
+
+/* ===========================
+   SNAKE LINE (MAIN BORDER)
+   =========================== */
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid var(--hover-color);
+    z-index: -1;
+}
+
+/* LEFT SIDE (ODD CARDS) */
+.card:nth-child(odd)::before {
+    left: 0;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+/* RIGHT SIDE (EVEN CARDS) */
+.card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+/* FIRST & LAST CLEANUP */
+.card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+.card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* MOBILE FIX FOR SMALL HEIGHT OFFSET */
+@media only screen and (max-width: 400px) {
+    .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+    }
+}
+
+/* ===========================
+   GLOW LAYER (CLONED GEOMETRY)
+   =========================== */
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* MATCH ODD GEOMETRY */
+.card:nth-child(odd)::after {
+    left: 0;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-radius: 50px 0 0 50px;
+}
+
+/* MATCH EVEN GEOMETRY */
+.card:nth-child(even)::after {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 50px 50px 0;
+}
+
+/* ===========================
+   CARD CONTENT
+   =========================== */
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    background: var(--second-bg-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.experience-role {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* TIMELINE HEADING */
+.timeline-heading {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-heading h3 {
+    color: var(--hover-color);
+}
+
+/* TIMELINE DOT */
+.timeline-heading::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid var(--hover-color);
+    z-index: 3;
+}
+
+/* DOT POSITIONING */
+.card:nth-child(odd) > .experience > .timeline-heading::before {
+    left: -45px;
+}
+
+.card:nth-child(even) > .experience > .timeline-heading::before {
+    right: -45px;
+}
+
+/* TEXT ALIGNMENT FOR EVEN CARDS */
+.card:nth-child(even) > .experience > .timeline-heading {
+    text-align: right;
+}
